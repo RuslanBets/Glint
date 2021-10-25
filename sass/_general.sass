@@ -1,0 +1,822 @@
+html
+  scroll-behavior: smooth !important
+.forestGreen
+  position: relative
+  background-image: url(../img/bg/forest.jpg)
+  background-color: #555555
+  background-repeat: no-repeat
+  background-size: 100%
+  object-fit: cover
+  background-blend-mode: multiply
+  background-attachment: fixed
+  padding-bottom: 100px
+  .lineHier
+    width: 2px
+    height: 102px
+    background-color: #39b54a
+    position: absolute
+    right: 15px
+    top: 457px
+    .scrool
+      color: rgb(255, 255, 255)
+      margin-left: 10px
+      margin-left: -120px
+      width: 170px
+    a
+      text-decoration: none
+      font-weight: 700
+      font-size: 10px
+      font-family: montserrat-semibold, sans-serif
+      text-transform: uppercase
+      letter-spacing: 3px
+      position: absolute
+      font-size: 11px
+    .arrow
+      color: #39b54a
+      margin-left: -150px
+      font-weight: 600
+      width: 30px
+      font-size: 15px
+      .fas
+        margin-top: -400px
+        font-weight: 600
+header
+  display: flex
+  justify-content: space-between
+  align-items: center
+  min-height: 96px
+  .logo
+    width: 80px
+    height: 26px
+    margin-left: 40px
+    img
+      width: 100%
+.burger-menu
+  box-sizing: border-box
+  position: fixed
+  right: 0
+  top: 0
+  bottom: 0
+  width: 280px
+  background: #000
+  z-index: 999
+  transition: width 0.6s
+  color: white
+  overflow: hidden
+  .burger-menu__wrapper
+    padding: 36px 30px 36px 36px
+    transition: 0.3s 0.3s
+    .burger-menu__header
+      color: #39b54a
+      font-family: montserrat-semibold, sans-serif
+      font-weight: 600
+      font-size: 11px
+      letter-spacing: 2.5px
+      text-transform: uppercase
+      margin: 9px 0 48px 0
+      display: flex
+      justify-content: space-between
+      align-items: center
+      .button
+        width: 30px
+        height: 30px
+        color: white
+        font-size: 25px
+        border: none
+        background: none
+        cursor: pointer
+
+    ul
+      padding: 0
+      width: 214px
+      height: 269px
+      list-style: none
+      display: flex
+      flex-direction: column
+      justify-content: space-around
+      font-family: montserrat-regular, sans-serif
+      font-size: 18px
+      font-weight: 600
+      line-height: 45px
+      a
+        text-decoration: none
+        color: rgb(255, 255, 255)
+      li
+        cursor: pointer
+  &.closed
+    width: 0
+    .wrapper
+      opacity: 0
+  .burger-menu__text
+    box-sizing: border-box
+    color: rgba(255, 255, 255, 0.25)
+    font-family: montserrat-light, sans-serif
+    font-size: 13px
+    font-weight: 500
+    line-height: 23px
+    letter-spacing: 1px
+    padding: 36px 30px 36px 36px
+    width: 280px
+    span
+      color: rgba(255, 255, 255, 0.5);
+      cursor: pointer
+      transition: 0.5s
+      &:hover
+        color: white
+  .berger-menu__social
+    padding: 36px 100px 36px 36px
+    margin-top: -50px
+    width: 280px
+    a
+      padding-right: 10px
+      color: rgba(255, 255, 255, 0.25)
+      transition: 0.5s
+      &:hover
+        color: white
+
+
+.menu
+  position: fixed
+  right: 10px
+  top: 30px
+  display: flex
+  align-items: center
+  margin-right: 40px
+  cursor: pointer
+  z-index: 50
+  box-sizing: border-box
+  padding: 8px 8px 15px 8px
+  &:hover a
+    color: #fff
+  &_wordMenu
+    padding-right: 12px
+    padding-top: 8px
+    a
+      color: rgb(57, 181, 74)
+      letter-spacing: .3rem
+      text-transform: uppercase
+      font-size: 13px
+      font-family: "montserrat-medium",sans-serif
+      text-decoration: none
+      font-style: normal
+      font-weight: 600
+      transition: 1s
+  &_burger
+    .line
+      width: 22px
+      height: 2px
+      background-color: #fff
+      margin-top: 7px
+/*--------------------------------------------------------------------------------------------------------------------------        
+.wrapper
+  display: flex
+  justify-content: space-between
+  margin: auto
+  padding-top: 150px
+  padding-bottom: 55px
+  .faded-out
+    transform: translateY(300px)
+    opacity: 0
+  .leftTekst
+    transition: 1.5s
+    .headerTekst
+      font-size: 16px
+      font-family: "montserrat-medium",sans-serif
+      text-transform: uppercase
+      letter-spacing: .3rem
+      font-weight: 400
+      color: rgba(255,255,255,.5)
+    .headerMainTeskat
+      margin-top: 25px
+      font-family: "montserrat-medium",sans-serif
+      color: #fff
+      font-size: 63px
+      letter-spacing: 2px
+      font-weight: 600
+      line-height: 83.979px
+    .headerButtons
+      margin-top: 80px
+      display: flex
+      a
+        letter-spacing: .25rem
+        text-decoration: none
+        color: #fff
+        font-size: 14px
+        font-weight: 600
+        font-family: "montserrat-medium",sans-serif
+      .leftButton
+        width: 215px
+        height: 44px
+        border: 3px solid #fff
+        text-align: center
+        line-height: 44px
+        margin-right: 29px
+        transition: 1s all
+        cursor: pointer
+        &:hover
+          background-color: #fff
+          a
+            color: #000
+      .rigthButton
+        width: 215px
+        height: 44px
+        border: 3px solid #fff
+        text-align: center
+        line-height: 44px
+        transition: 1s all
+        cursor: pointer
+        &:hover
+          background-color: #fff
+          a
+            color: #000
+  .rigthTekst
+    position: absolute
+    right: 50px
+    top: 350px
+    .icons
+      position: relative
+      width: 33px
+      height: 33px
+      border-radius: 100%
+      border: 2px solid #fff
+      margin-bottom: 15px
+      color: #fff
+      text-align: center
+      line-height: 33px
+      cursor: pointer
+      transition: 1s
+      &:hover span
+        visibility: visible
+        transition: 1s
+        opacity: 1
+      span
+        position: absolute
+        opacity: 0
+        right: 150%
+        cursor: pointer
+        transition: 1s
+        visibility: hidden
+        color: #39b54a
+        font-size: 15px
+        font-family: montserrat-regular, sans-serif
+        font-weight: 600
+
+/*------------------------------------------------------------------------------------------------------------------------------------------                
+#green
+  background-color: #39b54a
+  position: relative
+  .wrapper
+    display: flex
+    flex-direction: column
+    .topBlock
+      width: 960px
+      margin: auto
+      transition: 1.5s
+    .topik
+      color: black
+      font-family: "montserrat-bold", sans-serif
+      text-transform: uppercase
+      text-align: center
+      font-size: 17px
+      font-weight: 700
+      letter-spacing: 3px
+    .bigTopik
+      color: white
+      font-size: 70px
+      text-align: center
+      letter-spacing: 1px
+      font-weight: 700
+      margin-bottom: 50px
+    .line
+      width: 550px
+      height: 2px
+      background-color: rgba(255, 255, 255, 0.25)
+      margin: auto
+      margin-bottom: 30px
+    .text
+      margin-top: 40px
+      color: #010507
+      font-size: 22px
+      text-align: center
+      font-weight: 500
+      font-family: lora-regular, serif
+      line-height: 42px
+    .buttomBlock
+      margin-top: 100px
+      display: flex
+      justify-content: space-around;
+      padding-bottom: 80px
+      box-sizing: border-box
+      transition: 1.5s
+      .itemRig
+        border-right: 1px solid rgba(255, 255, 255, 0.25)
+      .items
+        width: 150px
+        height: 140px
+        padding-right: 100px
+        padding-left: 100px
+        .number
+          font-family: "montserrat-bold",sans-serif
+          color: #fff
+          text-align: center
+          font-weight: 600
+          font-size: 84px
+        .topic
+          width: 100%
+          color: black
+          font-size: 18px
+          font-weight: 600
+          font-family: "montserrat-semibold",sans-serif
+          text-align: center
+          margin-top: 10px       
+
+
+
+
+.servise
+  .wrapper
+    display: flex
+    flex-direction: column
+  .topBlock
+    width: 960px
+    margin: auto
+    transition: 1s
+    .topik
+      color: #39b54a
+      font-family: "montserrat-bold", sans-serif
+      text-transform: uppercase
+      text-align: center
+      font-size: 17px
+      font-weight: 700
+      letter-spacing: 2.5px
+    .bigTopik
+      color: #000000
+      font-size: 60px
+      text-align: center
+      letter-spacing: -1px
+      font-weight: 700
+      margin-bottom: 50px
+    .line
+      width: 550px
+      height: 1px
+      background-color: rgba(0,0,0,.1)
+      margin: auto
+      margin-bottom: 30px
+  .manyBlocks
+    width: 1200px
+    display: flex
+    flex-wrap: wrap
+    .items
+      width: 590px
+      min-height: 235px
+      display: flex
+      transition: 2.5s
+      .imgService
+        margin-left: 30px
+        color: #39b54a
+        font-size: 48px
+        font-weight: 400
+      .miniBlock
+        margin-left: 30px
+      .top
+        color: rgb(0, 0, 0)
+        font-size: 30px
+        font-family: montserrat-medium, sans-serif
+        font-weight: 600
+      .text
+        margin-top: 20px
+        color: rgb(117, 117, 117)
+        font-family: lora-regular, serif
+        font-size: 17px
+        font-weight: 400
+        line-height: 30px
+
+#works
+  .intro-wrap
+    background-color: #111111
+    height: 636px
+    width: 100%
+    .topBlock
+      transition: 1.5s
+      padding-top: 60px
+    .topik
+      color: #39b54a
+      font-family: "montserrat-bold", sans-serif
+      text-transform: uppercase
+      text-align: center
+      font-size: 17px
+      font-weight: 700
+      letter-spacing: 2.5px
+      margin-bottom: 30px
+    .bigTopik
+      width: 920px
+      margin: auto
+      color: white
+      font-size: 60px
+      text-align: center
+      letter-spacing: -1px
+      font-weight: 700
+      margin-bottom: 50px
+    .line
+      width: 550px
+      height: 2px
+      background-color: rgba(255, 255, 255, 0.05)
+      margin: auto
+  .pictures
+    width: 1120px
+    position: relative
+    margin: auto
+    margin-top: 50px
+    z-index: 999
+    margin-top: -200px
+    display: flex
+    overflow: hidden
+    .left-items
+      width: 50%
+      overflow: hidden       
+      .items
+        transition: 1s
+        overflow: hidden
+        &:hover
+          transform: scale(1.1)
+          cursor: pointer
+          filter: brightness(30%) 
+          overflow: hidden
+      img
+        width: 100%
+        display: block
+    .rigth-items
+      width: 50%
+      overflow: hidden
+      .items
+        transition: 1s
+        &:hover
+          transform: scale(1.1)
+          cursor: pointer
+          filter: brightness(20%)
+      img
+        width: 100%
+        display: block
+
+#slider-block
+  background-color: #e6e6e6
+  .wrapper
+    display: flex
+    flex-direction: column
+    .topBlock
+      margin-bottom: 30px
+      transition: 1.5s
+    .topik
+      color: #39b54a
+      font-family: "montserrat-bold", sans-serif
+      text-transform: uppercase
+      text-align: center
+      font-size: 17px
+      font-weight: 700
+      letter-spacing: 2.5px
+    .bigTopik
+      width: 920px
+      margin: auto
+      color: #000
+      font-size: 60px
+      text-align: center
+      letter-spacing: -1px
+      font-weight: 700
+      margin-bottom: 50px
+  .first-slider
+    cursor: pointer
+    transition: 1s
+    .image-slider
+      width: 138px
+      height: 138px
+      margin-bottom: 100px
+      img
+        width: 138px
+        height: 138px
+        font-size: 17px
+        opacity: 0.5
+        transition: 1s
+        &:hover
+          opacity: 1
+          transition: 0.5s
+  .line
+    width: 550px
+    height: 1px
+    background-color: rgba(0, 0, 0, 0.1)
+    margin: auto
+  .slider
+    width: 1200px
+    height: 500px
+    margin: auto
+    margin-top: 70px
+    position: relative
+    text-align: center
+    transition: 1s
+    .slide-btn-left
+      position: absolute
+      left: 90px
+      bottom: 350px
+      border: none
+      background: none
+      cursor: pointer
+      font-size: 30px
+    .slide-btn-rigth
+      position: absolute
+      right: 90px
+      bottom: 350px
+      border: none
+      background: none
+      cursor: pointer
+      font-size: 30px
+    .item
+      position: absolute
+      right: 130px
+      opacity: 0
+      transition: 0.1s
+      &.active
+        opacity: 1
+    .text
+      width: 930px
+      text-align: center
+      margin: auto
+      font-family: "lora-regular", serif
+      font-size: 30px
+      font-weight: 400
+      color: rgb(85, 85, 85)
+      line-height: 50px
+      margin-bottom: 60px
+    .avtor
+      width: 930px
+      margin: auto
+      text-align: center
+      .img-block
+        width: 84px
+        height: 84px
+        border-radius: 100%
+        overflow: hidden
+        margin: auto
+        margin-bottom: 20px
+        img
+          object-fit: cover
+          width: 100%
+          height: 100%
+      .name-avtor
+        color: rgb(0, 0, 0)
+        font-family: montserrat-semibold, sans-serif
+        font-size: 17px
+        font-weight: 700
+        margin-bottom: 10px
+      .avtor-job
+        color: rgb(117, 117, 117)
+        font-family: montserrat-light, sans-serif
+        font-size: 14px
+
+#blackBlock
+  background-image: url(../img/bg/black.webp)
+  background-repeat: no-repeat
+  object-fit: cover
+  background-position: center
+  background-color: #888888
+  background-blend-mode: multiply
+  .wrapper
+    position: relative
+    display: flex
+    flex-direction: column
+  .verticalLine
+    position: absolute
+    top: 0
+    right: 600px
+    height: 100px
+    width: 2px
+    background-color: #39b54a
+    text-align: center 
+  .topBlock
+    transition: 1s
+    .topik
+      color: #39b54a
+      font-family: "montserrat-bold", sans-serif
+      text-transform: uppercase
+      text-align: center
+      font-size: 17px
+      font-weight: 700
+      letter-spacing: 2.5px
+    .bigTopik
+      width: 920px
+      margin: auto
+      color: rgb(255, 255, 255)
+      font-size: 60px
+      text-align: center
+      letter-spacing: -1px
+      font-weight: 700
+      margin-bottom: 50px
+  .contact
+    width: 1000px
+    margin: auto
+    display: flex
+    transition: 1s
+    .firstBlock
+      width: 650px
+      min-height: 786px
+      background-color: rgba(0, 0, 0, 0.3)
+      // opacity: 0.7
+      .miniWrapper
+        width: 550px
+        margin: auto
+        margin-top: 60px
+        .topTekst
+          color: #FFFFFF
+          font-size: 13px
+          font-weight: 600
+          letter-spacing: 1.6px
+          opacity: 1
+          margin-bottom: 50px
+        .withORHith
+          width: 550px
+          height: 60px
+          background: transparent
+          border-top: none
+          border-left: none
+          border-right: none
+          border-bottom: 2px solid rgba(255, 255, 255, 0.07)
+          outline: none
+          transition: 0.7s
+          color: white
+          &:focus
+            border-bottom: 2px solid #39b54a
+            border-top: none
+            border-left: none
+            border-right: none
+            color: white
+          &:not(focus)
+            color: gray   
+        .submit
+          background: #39b54a
+          background-attachment: scroll
+          cursor: pointer
+          &:not(focus)
+            color: white
+          &:hover
+            filter: brightness(0.8)
+        .hithOrWith
+          width: 550px
+          height: 250px
+          background: transparent
+          border-top: none
+          border-left: none
+          border-right: none
+          border-bottom: 2px solid rgba(255, 255, 255, 0.07)
+          margin-bottom: 40px
+          outline: none
+          transition: 0.7s
+          color: white
+          &:focus
+            border-bottom: 2px solid #39b54a
+          &:not(focus)
+            color: gray  
+    .secondBlock
+      width: 350px
+      min-height: 786px
+      background-color: #121212
+      background-blend-mode: none
+      display: flex
+      .info
+        width: 215px
+        height: 700px
+        margin: auto
+        display: flex
+        flex-direction: column
+        .title
+          color: white
+          font-size: 13px
+          font-family: montserrat-medium, sans-serif
+          letter-spacing: 1.6px
+          font-weight: 600
+          margin-top: 20px
+          margin-bottom: 50px
+        .item
+          margin-bottom: 50px
+        .green-title
+          color: #39b54a
+          font-family: montserrat-medium, sans-serif
+          font-size: 16px
+          font-weight: 600
+          margin-bottom: 20px
+        .text-info
+          color: rgba(255, 255, 255, 0.4)
+          font-family: montserrat-light, sans-serif
+          font-size: 15px
+          font-weight: 400
+          letter-spacing: 1px
+          line-height: 30px
+        .icons
+          font-size: 20px
+          a
+            color: white
+            margin-right: 10px
+            transition: 0.5s
+            &:hover
+              color: #39b54a
+
+#footerBlack
+  background-color: #111111
+  .wrapper
+    display: flex
+    flex-direction: column
+    align-items: center
+    .floor
+      margin-top: 80px
+      color: rgb(117, 117, 117)
+      letter-spacing: 1px
+      a
+        color: white
+        text-decoration: none
+        transition: 0.5s
+        &:hover
+          color: #39b54a
+  .doubleBlocks
+    width: 1000px
+    margin: auto
+    margin-top: -20px
+    display: flex
+    justify-content: space-around
+  .leftBlock
+    .topik
+      width: 85px
+      height: 28px
+      margin-top: -40px
+      margin-bottom: 30px
+      img
+        font-size: 100%
+        object-fit: cover
+        width: 85px
+        height: 28px
+    .tekst
+      color: rgb(117, 117, 117)
+      font-size: 17px
+      font-family: lora-regular, serif
+      font-weight: 400
+      line-height: 30.005px
+  .rigthBlock
+    .topik
+      color: rgb(255, 255, 255)
+      font-family: montserrat-medium, sans-serif
+      font-size: 16px
+      font-weight: 400
+      margin-top: -40px
+      margin-bottom: 30px
+    .tekst
+      color: rgb(117, 117, 117)
+      font-size: 17px
+      font-family: lora-regular, serif
+      font-weight: 400
+      line-height: 30.005px
+      margin-bottom: 60px
+    .subscribe-form
+      background: url(../icons/mo.webp) 20px center no-repeat
+      background-size: 24px 16px, auto
+      .email
+        background-color: rgba(0, 0, 0, 0.1)
+        border-color: rgba(0, 0, 0, 0.1)
+        border-bottom-style: solid
+        border-right-style: solid
+        height: 54px
+        width: 260px
+        color: #fff
+        outline: none
+        padding-left: 70px
+        box-sizing: border-box
+        &::placeholder
+          line-height: 30px
+          margin-left: 30px
+          font-size: 14px
+          font-family: montserrat-light, sans-serif
+          letter-spacing: 2px
+          box-sizing: border-box
+      .greenButtom
+        background-color: rgb(57, 181, 74)
+        border-color: rgb(57, 181, 74)
+        border-bottom-style: solid
+        border-right-style: solid
+        cursor: pointer
+        color: #fff
+        width: 140px
+        height: 54px
+        text-transform: uppercase
+        font-size: 12px
+        font-family: montserrat-medium, sans-serif
+        font-weight: 600
+        letter-spacing: 3px
+
+.linkButton
+  opacity: 0
+  color: #555555
+  text-align: center
+  line-height: 60px
+  font-size: 20px
+  position: fixed
+  top: 650px
+  right: 20px
+  width: 60px
+  height: 60px
+  background-color: #000000
+  z-index: 999
